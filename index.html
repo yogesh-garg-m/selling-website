@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div id="logo">InstiOLX</div>
+        <div id="navbar-buttons">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sellingguidelines.html">Selling Guidelines</a></li>
+                <li><a href="customersupport.html">Contact Us</a></li>
+                <li><a href="t&c.html">T & C</a></li>
+                <li><a href="loginpage.html" class="login-button">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="container">
+            <h1 draggable="true">Sell Your Item on InstiOLX</h1>
+            <form>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Title of the product">
+    
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4"  placeholder="Describe your product..."></textarea>
+    
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price" placeholder="Rs. " required>
+    
+                <label for="buying-date">Buying Date</label>
+                <input type="date" id="buying-date" name="buying-date" required>
+    
+                <label for="buying-price">Buying Price</label>
+                <input type="number" id="buying-price" name="buying-price" placeholder="Rs. " required>
+    
+                <label for="photos">Upload Photos</label>
+                <input type="file" id="photos" name="photos" multiple accept="image/*" class="photo-input">
+    
+                <label for="details">Your Details</label>
+                <textarea id="details" name="details" rows="2" placeholder="Enter your details"></textarea>
+    
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" name="phone-number" placeholder="+91 xxxxx xxxxx" required>
+    
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter pickup location" required>
+    
+                <button type="submit" class="post-button">Post</button>
+            </form>
+        </div>
+        <div class="left-column">
+            <div class="box slideshow-container">
+                <div class="slideshow">
+                    <div class="slideshow-image image1"></div>
+                    <div class="slideshow-image image2"></div>
+                    <div class="slideshow-image image3"></div>
+                </div>
+            </div>
+            <div class="box reviews-container">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p>"Great platform to sell used items!"</p>
+            <p>- Aniket, New Delhi</p>
+        </div>
+        <div class="review">
+            <p>"Easy to use and very effective."</p>
+            <p>- Chitaramban, Pune</p>
+        </div>
+        <div class="review">
+            <p>"I found a buyer for my old bike within a day!"</p>
+            <p>- Nishank, Ahemdabad</p>
+        </div>
+        <div class="review">
+            <p>"Amazing pickup service! & got my payment within a week."</p>
+            <p>- Sudarshan Ghosh, Kolkata</p>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Exchange Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p><i class="fa fa-map-marker"></i> gargy947@gmail.com</p>
+                <p><i class="fa fa-phone"></i></p>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-whatsapp"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                </div>
+            </div>
+            © Developed By Yogesh Garg<br>Second Year Undergrad a NITJ
+        </div>
+        <div class="foot-note">
+            <p>Please consider that footer is kept same so that it may align perfectly with buying page.</p>
+        </div>
+    </footer>
+</body>
+</html>

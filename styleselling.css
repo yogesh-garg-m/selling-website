@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #28a745;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar #logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar #logo:hover {
+    font-size: 2rem;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    transition: background-color 0.3s, border-radius 0.3s, font-size 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #1f8f39;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.login-button {
+    font-style: italic;
+    font-size: 1rem;
+    background-color: #18702c;
+    color: white;
+    border-radius: 8px;
+}
+
+.login-button:hover {
+    background-color: #0aeb3e;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 100px; 
+}
+
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+details {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%; /* Ensures details elements take up the full width of the container */
+}
+
+details[open] {
+    background-color: #e9e9e9;
+}
+
+details summary {
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+
+details summary:hover {
+    font-size: 1.4rem;
+    background-color: #0fa926;
+    color: white;
+    border-radius: 4px;
+}
+
+details summary .plus {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+details p {
+    padding: 10px;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+details[open] p {
+    max-height: 200px; 
+    padding: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-column {
+    width: 30%;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column p {
+    margin-top: 10px;
+}
+
+.footer-column .social-icons {
+    margin-top: 10px;
+}
+
+.footer-column .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.foot-note p {
+    margin: 5px;
+    padding: 15px;
+}
+
+
+@media (max-width: 800px) {
+    .container-1 {
+        width: 80%; /* Adjust the width for smaller screens */
+    }
+
+    .footer-column {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-1 {
+        width: 90%; /* Further adjust the width for very small screens */
+    }
+
+    .navbar #logo {
+        font-size: 1rem;
+    }
+
+    .navbar ul li a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .login-button {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 70px; /* Adjust to account for fixed navbar */
+    }
+}
