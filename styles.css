@@ -21,6 +21,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 100;
+    border-bottom: 4px solid whitesmoke;
 }
 
 .navbar #logo {
